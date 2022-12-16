@@ -1,12 +1,32 @@
-import react from 'react';
+import React from "react";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Layouts from "./components/layouts/Layouts";
+import ProductDetail from "./pages/ProductDetail";
+import ProductPage from "./pages/ProductPage";
+
+
 
 
 function App() {
-  return (
-    <div className="">
-      <h1 className='bg-red-500'>heloo</h1>
-    </div>
-  );
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+     <Route path='/' element={ <Layouts /> }>
+       <Route index element={<Home />} />
+      
+      <Route path="/productpage" element={<ProductPage />} />
+
+      <Route path="/productdetail" element={<ProductDetail />} />
+
+     </Route>
+      )
+    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
