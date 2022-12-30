@@ -9,7 +9,7 @@ import { FiHeart, FiChevronDown, FiChevronRight, FiChevronLeft } from "react-ico
 
 function ProductDetail() {
   return (
-    <div>
+    <div className='mx-4 my-2'>
       
       <nav class="bg-gray-50 px-5 py-3 rounded-md w-full">
       <ol class="list-reset flex">
@@ -139,7 +139,7 @@ function ProductDetail() {
       </div>
     </div>
 
-    <div className="p-0.5 rounded bg-gradient-to-r from-[#78A3AD] to-[#C056097D]">
+    <div className="p-0.5 rounded bg-gradient-to-r from-[#78A3AD] to-[#C056097D] place">
     <button
       className="px-6 py-2 text-[#C056097D] bg-white">
       Explore all

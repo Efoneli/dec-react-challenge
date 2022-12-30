@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import Layouts from "./components/layouts/Layouts";
 import ProductDetail from "./pages/ProductDetail";
 import ProductPage from "./pages/ProductPage";
+import Auction from "./pages/Auction";
+import LiveBid from "./pages/LiveBid";
 
 
 
@@ -22,6 +24,11 @@ function App() {
       <Route path="/productpage" element={<ProductPage />} />
 
       <Route path="/productdetail" element={<ProductDetail />} />
+
+      <Route path="/auction" element={<Auction />} />
+
+      <Route path="/live" element={<LiveBid />} />
+
 
      </Route>
       )

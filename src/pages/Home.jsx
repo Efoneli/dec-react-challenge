@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import Footer from '../components/Footer';
 import boy from '../assets/boy.png';
 import girl from '../assets/girl.png';
@@ -9,8 +9,7 @@ import dancer from '../assets/dancer.png';
 import people from '../assets/people.png';
 import sphnyx from '../assets/sphnyx.png';
 import arrow from '../assets/arrow.png';
-import lady from '../assets/lady.png';
-
+// import lady from '../assets/lady.png';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './Home.css';
@@ -36,7 +35,7 @@ function Home() {
 
     
   return (
-    <div>
+    <div className='mx-4 my-2'>
       <div className='text-center p-4 my-8'>
         <p className='text-4xl font-bold p-4'>
           Photography is poetry &<br /> beautiful untold stories
